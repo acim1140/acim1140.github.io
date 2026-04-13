@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Muhammad Nazim Portfolio</title>
+    <title>Muhammad Nazim</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #111;
         }
 
         header {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
+            padding: 80px 10%;
         }
 
         header h1 {
+            font-size: 48px;
             margin: 0;
-            font-size: 40px;
         }
 
         header p {
             margin-top: 10px;
-            color: #ccc;
+            color: #555;
         }
 
-        .container {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 10% 60px;
         }
 
-        .project {
+        .card {
             background: white;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+            cursor: pointer;
         }
 
-        .project img {
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .card img {
             width: 100%;
-            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+            background: #ddd;
         }
 
-        h2 {
-            margin-bottom: 20px;
+        .card-content {
+            padding: 15px;
         }
+
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin-top: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
@@ -56,29 +75,33 @@
     <p>Graphic Designer & Interactive Developer</p>
 </header>
 
-<div class="container">
+<section class="projects">
 
-    <h2>My Projects</h2>
-
-    <div class="project">
-        <h3>Packaging Design</h3>
-        <img src="https://via.placeholder.com/800x400">
-        <p>Desain kemasan produk dengan fokus pada branding dan visual menarik.</p>
+    <div class="card">
+        <img src="">
+        <div class="card-content">
+            <h3>Packaging Design</h3>
+            <p>Branding & visual identity</p>
+        </div>
     </div>
 
-    <div class="project">
-        <h3>Game UI Design</h3>
-        <img src="https://via.placeholder.com/800x400">
-        <p>UI game edukasi menggunakan Unity dengan konsep interaktif.</p>
+    <div class="card">
+        <img src="">
+        <div class="card-content">
+            <h3>Game UI Design</h3>
+            <p>Unity interface & interaction</p>
+        </div>
     </div>
 
-    <div class="project">
-        <h3>AR Application</h3>
-        <img src="https://via.placeholder.com/800x400">
-        <p>Aplikasi Augmented Reality untuk pembelajaran alat musik tradisional.</p>
+    <div class="card">
+        <img src="">
+        <div class="card-content">
+            <h3>AR Application</h3>
+            <p>Interactive learning experience</p>
+        </div>
     </div>
 
-</div>
+</section>
 
 </body>
 </html>
