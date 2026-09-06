@@ -1,107 +1,35 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="id">
 <head>
-    <title>Muhammad Nazim</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #fafafa;
-            color: #111;
-        }
-
-        header {
-            padding: 80px 10%;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        header p {
-            margin-top: 10px;
-            color: #555;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 0 10% 60px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background: #ddd;
-        }
-
-        .card-content {
-            padding: 15px;
-        }
-
-        .card h3 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .card p {
-            margin-top: 5px;
-            color: #666;
-            font-size: 14px;
-        }
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CatatKi' adalah aplikasi pencatatan keuangan harian untuk membantu pengguna mencatat dan memahami keuangan pribadi.">
+  <title>CatatKi' — Pencatatan Keuangan Harian</title>
+  <style>
+    :root{--green:#18b86a;--green-dark:#0d7a47;--ink:#14211a;--muted:#64736a;--soft:#effaf4;--line:#dce9e1;--white:#fff}*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fbfdfc;line-height:1.65}nav{max-width:1050px;margin:auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:900;font-size:22px;color:var(--green-dark)}nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:14px}main{max-width:1050px;margin:auto;padding:70px 24px 90px}.hero{max-width:760px;padding:54px 0}.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:var(--soft);color:var(--green-dark);font-weight:700;font-size:13px}.hero h1{font-size:clamp(42px,7vw,72px);line-height:1.03;margin:20px 0 18px;letter-spacing:-2px}.hero p{font-size:19px;color:var(--muted);max-width:680px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:32px}.card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px}.card h2{font-size:17px;margin:0 0 8px}.card p{font-size:14px;color:var(--muted);margin:0}.privacy{margin-top:56px;padding:25px;border-radius:20px;background:var(--soft)}.privacy a{color:var(--green-dark);font-weight:800;text-decoration:none}footer{border-top:1px solid var(--line);padding:28px 24px;color:var(--muted);font-size:13px;text-align:center}@media(max-width:600px){nav{align-items:flex-start}.links{display:flex;flex-direction:column;text-align:right}.links a{margin:0 0 4px}.hero{padding-top:38px}}
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>Muhammad Nazim</h1>
-    <p>Graphic Designer & Interactive Developer</p>
-</header>
-
-<section class="projects">
-
-    <div class="card">
-        <img src="">
-        <div class="card-content">
-            <h3>Packaging Design</h3>
-            <p>Branding & visual identity</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="">
-        <div class="card-content">
-            <h3>Game UI Design</h3>
-            <p>Unity interface & interaction</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="">
-        <div class="card-content">
-            <h3>AR Application</h3>
-            <p>Interactive learning experience</p>
-        </div>
-    </div>
-
-</section>
-
+  <nav>
+    <div class="brand">CatatKi'</div>
+    <div class="links"><a href="/privacy.html">Privasi</a><a href="/terms.html">Ketentuan</a></div>
+  </nav>
+  <main>
+    <section class="hero">
+      <span class="badge">Pencatatan Keuangan Harian</span>
+      <h1>Catat uangmu. Pahami keuanganmu.</h1>
+      <p>CatatKi' membantu pencatatan keuangan pribadi dengan dukungan beberapa akun, transfer antar akun, pencatatan transaksi, laporan, serta backup yang dapat dipulihkan kembali.</p>
+    </section>
+    <section class="grid">
+      <div class="card"><h2>Data utama tetap lokal</h2><p>Catatan keuangan utama disimpan pada perangkat pengguna.</p></div>
+      <div class="card"><h2>Backup Google Drive</h2><p>Jika pengguna memilih menghubungkan akun Google, CatatKi' menggunakan area data aplikasi Google Drive untuk menyimpan dan memulihkan backup CatatKi'.</p></div>
+      <div class="card"><h2>Kontrol pengguna</h2><p>Pengguna memilih akun Google yang digunakan dan dapat memutuskan akun dari fitur backup.</p></div>
+    </section>
+    <section class="privacy">
+      <strong>Informasi privasi</strong><br>
+      Baca bagaimana CatatKi' menangani data dan akses Google Drive pada <a href="/privacy.html">Kebijakan Privasi</a> serta <a href="/terms.html">Ketentuan Layanan</a>.
+    </section>
+  </main>
+  <footer>© 2026 CatatKi'. Pencatatan Keuangan Harian.</footer>
 </body>
 </html>
